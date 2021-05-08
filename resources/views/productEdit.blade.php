@@ -1,3 +1,6 @@
+@extends('layout')
+@section('content')
+
 <form action ="/edit" method="POST">
 @csrf
     <input type="hidden" name="id" value="{{$product['id']}}"></input>
@@ -6,3 +9,5 @@
     <input type="number" name="price" placeholder="Enter price" value="{{$product['price']}}"></input><br/><br/>
     <button type="submit">Update Product</button>
 </form>
+
+@stop

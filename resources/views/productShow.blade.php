@@ -1,5 +1,8 @@
+@extends('layout')
+@section('content')
 
-<table border="1">
+
+<table class="table">
     <tr>
         <th>ID</th>
         <th>Title</th>
@@ -19,3 +22,5 @@
 </table>
 
 <a href="new">new Product</a>
+
+@stop
